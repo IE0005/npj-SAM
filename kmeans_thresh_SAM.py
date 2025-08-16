@@ -33,10 +33,7 @@ if using_colab:
     # Create a directory
     subprocess.check_call(["mkdir", "images"])
 
-    # Download images
-    subprocess.check_call(["wget", "-P", "images", "https://raw.githubusercontent.com/facebookresearch/segment-anything/main/notebooks/images/truck.jpg"])
-    subprocess.check_call(["wget", "-P", "images", "https://raw.githubusercontent.com/facebookresearch/segment-anything/main/notebooks/images/groceries.jpg"])
-
+    
     # Download a file
     subprocess.check_call(["wget", "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth"])
 
